@@ -1,8 +1,4 @@
-# if you dont use pipenv uncomment the following:
-# from dotenv import load_dotenv
-# load_dotenv()
 
-#VoiceBot UI with Gradio
 import os
 import gradio as gr
 
@@ -49,7 +45,7 @@ iface = gr.Interface(
         gr.Textbox(label="Doctor's Response"),
         gr.Audio("Temp.mp3")
     ],
-    title="AI Doctor with Vision and Voice"
+    title="AI Doctor"
 )
 
 iface.launch(debug=True)
